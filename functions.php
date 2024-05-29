@@ -169,23 +169,6 @@
 		return true;
 	}
 
-	// checks if given marker value is valid
-	function	isValidMarker($marker)
-	{
-		if (!$marker || !isset($marker) || !isset($_GET[$marker]))
-			return false;
-
-		$marker = $_GET[$marker];
-		if (!ctype_lower($marker))
-			return false;
-
-		if ($marker != 'true')
-			return false;
-
-		return true;
-
-	}
-
 
 	// checks if given timezone offset is valid
 	function isValidOffset($offset)
